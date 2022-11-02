@@ -1,0 +1,43 @@
+priority 1
+
+snippet minipage "minipage" b
+\begin{minipage}{${2:0.48\textwidth}}
+	${1}
+\end{minipage}
+endsnippet
+
+
+###############################################################################
+# import
+###############################################################################
+snippet graphicspath "graphicspath" b
+\makeatletter
+	\graphicspath{ {\import@path/fig/} }
+\makeatother
+endsnippet
+
+# https://ctan.org/pkg/import
+snippet import "import" b
+\import{${1:full_path}}{${2:file}}
+endsnippet
+
+snippet subimport "subimport" b
+\subimport{${1:path_extension}}{${2:file}}
+endsnippet
+
+###############################################################################
+# metropolis
+###############################################################################
+snippet fragile "fragile frame" b
+\begin{frame}[fragile]{${1:title}}
+	${2}	
+\end{frame}
+endsnippet	
+
+snippet standout "fragile frame" b
+\begin{frame}[standout]{${1:title}}
+	${2}	
+\end{frame}
+endsnippet	
+
+
